@@ -18,9 +18,7 @@ htmltext = htmltext.replace("Changelog:\n- ", "<b>Changelog:</b><br>\n<ul><li>")
 htmltext = htmltext.replace("\n- ", "</li>\n<li>")
 
 # need to fix this regex... not working!!
-# htmltext = re.sub("(<p>.*?<ul>.*?)</p>", "\\1</ul></p>", htmltext)
-
-htmltext = BeautifulSoup(htmltext,'xml')
+htmltext = re.sub("(<p><b>Known Issues:</b><br>\n<ul>.*?)</p>", "\\1</ul></p>", htmltext)
 
 bbtext = htmltext.replace("<p>", "")
 bbtext = bbtext.replace("</p>", "")
