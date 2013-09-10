@@ -16,8 +16,7 @@ htmltext = htmltext.replace("Known Issues:\n- ", "<b>Known Issues:</b><br>\n<ul>
 htmltext = htmltext.replace("Changelog:\n- ", "<b>Changelog:</b><br>\n<ul><li>")
 htmltext = htmltext.replace("\n- ", "</li>\n<li>")
 
-# need to fix this regex... not working!!
-htmltext = re.sub("(<p><b>Known Issues:</b><br>\n<ul>.*?)</p>", "\\1</ul></p>", htmltext)
+htmltext = re.sub(re.compile('(<p>.*?<ul>.*?)</p>', re.DOTALL), '\\1</li></ul></p>', htmltext)
 
 bbtext = htmltext.replace("<p>", "")
 bbtext = bbtext.replace("</p>", "")
