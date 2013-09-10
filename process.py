@@ -16,6 +16,7 @@ htmltext = htmltext.replace("Known Issues:\n- ", "<b>Known Issues:</b><br>\n<ul>
 htmltext = htmltext.replace("Changelog:\n- ", "<b>Changelog:</b><br>\n<ul><li>")
 htmltext = htmltext.replace("\n- ", "</li>\n<li>")
 
+# need to fix this regex... not working!!
 htmltext = re.sub("(<p>.*?<ul>.*?)</p>", "\1</ul></p>", htmltext)
 
 bbtext = htmltext.replace("<p>", "")
