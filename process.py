@@ -6,7 +6,7 @@
 
 import sys
 import re
-from bs4 import BeautifulSoup
+import BeautifulSoup
 
 with open (sys.argv[1], "r") as myinputfile:
     rawtext = myinputfile.read().rstrip()
