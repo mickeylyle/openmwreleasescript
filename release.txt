@@ -1,0 +1,44 @@
+The OpenMW team is proud to announce the release of version 0.26.0! Grab it from our Downloads Page (https://openmw.org/downloads/) for all operating systems. This is the most violent release of OpenMW to date, with the implementation of Melee combat, Lyncanthropy, and Drowning. See below for the full changelog.
+
+Known Issues:
+- Extreme shaking may occur during cell transitions for some users (enable anti-aliasing as a possible workaround)
+- Polish version of Morrowind.esm makes OpenMW crash
+
+Do not miss the release video by the mighty WeirdSexy: http://www.youtube.com/watch?v=WSr3k9ubR7w
+
+Changelog:
+- Implemented Melee Combat
+- Implemented Lycanthropy
+- Implemented auto-initialization of AI Packages
+- Implemented Drowning
+- Implemented Data File installation in the Launcher
+- Implemented mouse wheen transitions between first/third person
+- Improvements to UI window sizing and input
+- Improvements to sliders in the enchanting window
+- Fixed already-dead NPCs not equipping clothing/items
+- Fixed missing terrain in Tamriel Rebuilt, South of Tel Oren
+- Fixed health calculation of NPCs, fixing Heart of Lorkhan acting like a dead body
+- Fixed strange behavior when leaving water
+- Fixed terrain rendering to more accurately emulate vanilla Morrowind
+- Fixed no clip players causing NPCs to leviate
+- Fixed door open/close sound not cutting itself
+- Fixed no clip player preventing doors from opening
+- Fixed keypress during startup freezing the game
+- Fixed combat magic stances being available prematurely during character creation
+- Fixed naked Dark Brotherhood assassins
+- Fixed Rest dialog showing "Until Healed" option when player has full stats
+- Fixed invisible equipped torches
+- Fixed sheath weapon sound playing when leaving magic stance
+- Fixed some boots not producing footstep sounds
+- Fixed FPS bar alignment
+- Fixed printscreen not working
+- Fixed being able to jump while sneaking
+- Fixed blank movie variables in Morrowind.ini crashing the game
+- Fixed dancing girls in "Suran, Desele's House of Earthly Delights" so they dance
+- Fixed repeating idle animations
+- Fixed sticking to certain surfaces, improves movement when swimming close to collidable objects
+- Fixed animation problem while swimming at the surface of water and looking up
+- Fixed capitalization of names in inventory
+- Fixed an issue with the spell effect area layout not updating properly
+- Fixed a Tamriel Rebuilt crash on load
+- Fixed rain sound persisting into new games
