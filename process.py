@@ -17,6 +17,8 @@ htmltext = htmltext.replace("Changelog:\n- ", "<b>Changelog:</b><br>\n<ul><li>")
 htmltext = htmltext.replace("\n- ", "</li>\n<li>")
 
 htmltext = re.sub(re.compile('(<p>.*?<ul>.*?)</p>', re.DOTALL), '\\1</li></ul></p>', htmltext)
+htmltext = re.sub('(.*?)release video(.*?) http.*?(watch.*?)</p>', '\\1<a href="http://www.youtube.com/\\3\">release video</a>\\2</p>', htmltext)
+htmltext = htmltext.replace("WeirdSexy:", "WeirdSexy.")
 
 bbtext = htmltext.replace("<p>", "")
 bbtext = bbtext.replace("</p>", "")
